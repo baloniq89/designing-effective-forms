@@ -1,3 +1,52 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+fieldset {
+  grid-column: span 2;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+button[type="submit"] {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+@media (max-height: 800px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+}
+
 .modal {
-    background: #c6d0ff7a;
+  background: #c6d0ff7a;
 }
